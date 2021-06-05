@@ -184,7 +184,7 @@ namespace BotConvo
                 var tokens = tokenizer.Tokenize(message);
                 var pos = posTagger.Tag(tokens);
                 var chunks = chunker.GetChunks(tokens, pos)
-                    .Where(c => c != null && c.Tag != null) // nlp library occasionally gives you null strings
+                    .Where(c => c != null && c.Tag != null && c.TaggedWords != null && !c.TaggedWords.Any(tw => tw.Word == null)) // nlp library occasionally gives you null strings
                     .Where(c => !c.TaggedWords.Any(tw => tw.Word.StartsWith("'") || tw.Word.EndsWith("'"))) // nlp library splits contractions strangely sometimes, so this avoids prompts like "'s"
                     .Where(c => !(c.Tag == "PP" && c.TaggedWords.Count == 1)); // ignore prompts like "of"
 

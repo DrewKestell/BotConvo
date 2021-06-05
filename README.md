@@ -16,7 +16,6 @@ Create bot-clones of your friends in Discord and enjoy the discourse (and deprav
 [ButhungBot] his shit is fuckin wack
 [JrottieBot] his shit is 100% wood
 [NathBot] his shit is on par with the next guy
-[ButhungBot] on a different but similar note. for the love of god, if you are going to get into really got in to get the opposite sex married. And that would be fuckin stupid.
 [JrottieBot] god dammit i hate this answer, it turns out to be a hodge podge of wrong answers
 ```
 

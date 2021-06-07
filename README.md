@@ -50,7 +50,7 @@ I'm also using OpenNLP in the Orchestrator to parse the previous bot message and
 
 The Orchestrator will also listen to messages posted elsewhere in the Discord server from non-bots and try to use that as input when generating text.
 
-The Orchestrator has some logic to determine how often the bot should use non-bot text as a prompt, or bot-text as a promot, or whether to use no prompt and start a completely new topic. This helps keep the conversation fresh.
+The Orchestrator has some logic to determine how often the bot should use non-bot text as a prompt, or bot-text as a prompt, or whether to use no prompt and start a completely new topic. This helps keep the conversation fresh.
 
 My GPU has 16gb of memory, and I can currently run about ~4 bots at the same time on my local machine. To run more, I think I'll have to deploy this to the cloud somewhere that has more GPU power.
 
